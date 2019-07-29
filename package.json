@@ -1,0 +1,53 @@
+{
+  "name": "korean_name_web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kimkkikki",
+  "license": "None",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "antd": "^3.20.7",
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "dotenv-load": "^2.0.0",
+    "express": "^4.17.1",
+    "less": "^2.7.3",
+    "mobx": "4.x",
+    "mobx-react": "^6.1.1",
+    "next": "^9.0.2",
+    "next-env": "^1.1.0",
+    "null-loader": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.0",
+    "react-adsense": "^0.1.0",
+    "react-dom": "^16.6.0",
+    "react-ga": "^2.6.0",
+    "react-share": "^3.0.0",
+    "recharts": "^1.6.2",
+    "webpack": "^4.4.0",
+    "webpack-filter-warnings-plugin": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "ast-utils": "^1.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-import": "^1.12.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "nodemon": "^1.19.1"
+  }
+}

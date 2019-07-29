@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "babel"],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-no-target-blank": "off",
+    "react/require-default-props": "off",
+    "react/no-array-index-key": "off"
+  }
+}
