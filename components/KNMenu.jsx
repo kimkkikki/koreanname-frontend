@@ -34,33 +34,33 @@ class KNMenu extends Component {
           <Sider trigger={null} collapsed={!menuOpen} onBreakpoint={breakToMobile} breakpoint="md" collapsedWidth="0">
             <Menu theme="dark" onClick={this.onClickMenu} defaultSelectedKeys={[activeItem]}>
               <Menu.Item key="home">
-                <Link href="/">
-                  <a href="/">Home</a>
+                <Link href="/" as="/">
+                  <a>Home</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="contains">
-                <Link href="/contains">
-                  <a href="/contains">맞춤 이름 찾기</a>
+                <Link href="/contains" as="/contains">
+                  <a>맞춤 이름 찾기</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="length">
-                <Link href="/length">
-                  <a href="/length">이름 길이별 랭킹</a>
+                <Link href="/length" as="/length">
+                  <a>이름 길이별 랭킹</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="change">
-                <Link href="/change">
-                  <a href="/change">개명 이름 랭킹</a>
+                <Link href="/change" as="/change">
+                  <a>개명 이름 랭킹</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="unique">
-                <Link href="/unique">
-                  <a href="/unique">유일한이름</a>
+                <Link href="/unique" as="/unique">
+                  <a>유일한이름</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="born">
-                <Link href="/born">
-                  <a href="/born">출생아 통계</a>
+                <Link href="/born" as="/born">
+                  <a>출생아 통계</a>
                 </Link>
               </Menu.Item>
             </Menu>
