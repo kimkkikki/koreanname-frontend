@@ -35,9 +35,7 @@ class SocialShare extends Component {
     const { url } = this.props;
     return (
       <React.Fragment>
-        <Title style={{ textAlign: 'center' }} level={4}>
-          공유하기
-        </Title>
+        <Title level={4}>공유하기</Title>
         <Row style={{ margin: 16 }} type="flex" justify="center" gutter={16}>
           <Col span={4}>
             <FacebookShareButton url={url}>
@@ -60,7 +58,7 @@ class SocialShare extends Component {
             </a>
           </Col>
           <Col span={4}>
-            <Avatar src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png" onClick={this.handleKakaoLink} />
+            <Avatar src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" onClick={this.handleKakaoLink} />
           </Col>
         </Row>
       </React.Fragment>
