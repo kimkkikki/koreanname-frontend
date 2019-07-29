@@ -35,7 +35,9 @@ class SocialShare extends Component {
     const { url } = this.props;
     return (
       <React.Fragment>
-        <Title level={4}>공유하기</Title>
+        <Title style={{ textAlign: 'center' }} level={4}>
+          공유하기
+        </Title>
         <Row style={{ margin: 16 }} type="flex" justify="center" gutter={16}>
           <Col span={4}>
             <FacebookShareButton url={url}>
