@@ -35,32 +35,32 @@ class KNMenu extends Component {
             <Menu theme="dark" onClick={this.onClickMenu} defaultSelectedKeys={[activeItem]}>
               <Menu.Item key="home">
                 <Link href="/">
-                  <a>Home</a>
+                  <a href="/">Home</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="contains">
                 <Link href="/contains">
-                  <a>맞춤 이름 찾기</a>
+                  <a href="/contains">맞춤 이름 찾기</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="length">
                 <Link href="/length">
-                  <a>이름 길이별 랭킹</a>
+                  <a href="/length">이름 길이별 랭킹</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="change">
                 <Link href="/change">
-                  <a>개명 이름 랭킹</a>
+                  <a href="/change">개명 이름 랭킹</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="unique">
                 <Link href="/unique">
-                  <a>유일한이름</a>
+                  <a href="/unique">유일한이름</a>
                 </Link>
               </Menu.Item>
               <Menu.Item key="born">
                 <Link href="/born">
-                  <a>출생아 통계</a>
+                  <a href="/born">출생아 통계</a>
                 </Link>
               </Menu.Item>
             </Menu>
