@@ -34,34 +34,22 @@ class KNMenu extends Component {
           <Sider trigger={null} collapsed={!menuOpen} onBreakpoint={breakToMobile} breakpoint="md" collapsedWidth="0">
             <Menu theme="dark" onClick={this.onClickMenu} defaultSelectedKeys={[activeItem]}>
               <Menu.Item key="home">
-                <Link href="/" as="/">
-                  <a>Home</a>
-                </Link>
+                <a href="/">Home</a>
               </Menu.Item>
               <Menu.Item key="contains">
-                <Link href="/contains" as="/contains">
-                  <a>맞춤 이름 찾기</a>
-                </Link>
+                <a href="/contains">맞춤 이름 찾기</a>
               </Menu.Item>
               <Menu.Item key="length">
-                <Link href="/length" as="/length">
-                  <a>이름 길이별 랭킹</a>
-                </Link>
+                <a href="/length">이름 길이별 랭킹</a>
               </Menu.Item>
               <Menu.Item key="change">
-                <Link href="/change" as="/change">
-                  <a>개명 이름 랭킹</a>
-                </Link>
+                <a href="/change">개명 이름 랭킹</a>
               </Menu.Item>
               <Menu.Item key="unique">
-                <Link href="/unique" as="/unique">
-                  <a>유일한이름</a>
-                </Link>
+                <a href="/unique">유일한이름</a>
               </Menu.Item>
               <Menu.Item key="born">
-                <Link href="/born" as="/born">
-                  <a>출생아 통계</a>
-                </Link>
+                <a href="/born">출생아 통계</a>
               </Menu.Item>
             </Menu>
 
