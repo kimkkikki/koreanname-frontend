@@ -65,7 +65,7 @@ class KNMenu extends Component {
               </Menu.Item>
             </Menu>
 
-            {menu.onAds ? <AdSense.Google client="ca-pub-0128314650546610" slot="7477660188" style={{ display: 'block', height: 200, width: 200 }} /> : ''}
+            {/* {menu.onAds ? <AdSense.Google client="ca-pub-0128314650546610" slot="7477660188" style={{ display: 'block', height: 200, width: 200 }} /> : ''} */}
           </Sider>
           <Layout style={{ background: '#fff' }}>
             <Layout.Content>
