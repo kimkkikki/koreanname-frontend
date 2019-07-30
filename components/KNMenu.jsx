@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
 import { observer, inject } from 'mobx-react';
 import PropTypes from 'prop-types';
 
@@ -24,7 +23,7 @@ class KNMenu extends Component {
     const { activeItem, children, menu } = this.props;
     const { menuOpen, breakToMobile, isMobile } = menu;
 
-    const layoutStyle = {};
+    const layoutStyle = { minHeight: '100vh' };
     if (isMobile) {
       layoutStyle.paddingBottom = 50;
     }
@@ -50,6 +49,9 @@ class KNMenu extends Component {
               </Menu.Item>
               <Menu.Item key="born">
                 <a href="/born">출생아 통계</a>
+              </Menu.Item>
+              <Menu.Item key="surname">
+                <a href="/surname">성씨별 통계</a>
               </Menu.Item>
             </Menu>
 

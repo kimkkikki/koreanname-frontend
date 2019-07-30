@@ -24,6 +24,10 @@ app.prepare().then(() => {
     return app.render(req, res, '/changeDetail', { name: req.params.name });
   });
 
+  server.get('/surname/:surname', (req, res) => {
+    return app.render(req, res, '/surnameDetail', { surname: req.params.surname });
+  });
+
   server.get('/ads.txt', (req, res) => {
     res.sendFile(`${__dirname}/static/ads.txt`);
   });

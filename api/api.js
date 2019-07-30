@@ -39,3 +39,11 @@ export function getContainsData(gender, name, page) {
 export function getLengthRankData(length, page) {
   return axios.get(`${process.env.API_HOST}/api/length/${length}/${page}`);
 }
+
+export function getSurnameRankData(page) {
+  return axios.get(`${process.env.API_HOST}/api/surname/rank/2015/2015/${page}`);
+}
+
+export function getSurnameData(surname) {
+  return axios.get(`${process.env.API_HOST}/api/surname/${surname}`);
+}
