@@ -23,6 +23,7 @@
     "next": "^9.0.2",
     "next-env": "^1.1.0",
     "null-loader": "^3.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.6.0",
     "react-adsense": "^0.1.0",

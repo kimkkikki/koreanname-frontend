@@ -4,6 +4,7 @@ const dotenvLoad = require('dotenv-load');
 const { parsed: localEnv } = require('dotenv').config();
 const webpack = require('webpack');
 const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 dotenvLoad();
 const withNextEnv = nextEnv();
@@ -40,6 +41,9 @@ module.exports = withNextEnv(
         }),
       );
       config.plugins.push(new webpack.EnvironmentPlugin(localEnv));
+      if (config.mode === 'production' && Array.isArray(config.optimization.minimizer)) {
+        config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}));
+      }
       return config;
     },
   }),
