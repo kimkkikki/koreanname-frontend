@@ -36,8 +36,11 @@ app.prepare().then(() => {
     res.sendFile(`${__dirname}/static/robots.txt`);
   });
 
-  server.get('/sitemap.xml', (req, res) => {
-    res.sendFile(`${__dirname}/static/sitemap.xml`);
+  server.get('/sitemap*.xml', (req, res) => {
+    res.sendFile(`${__dirname}/static${req.path}`, err => {
+      console.log(err);
+      res.status(404).send();
+    });
   });
 
   server.get('*', (req, res) => {
