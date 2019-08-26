@@ -18,6 +18,7 @@
     "react/jsx-no-target-blank": "off",
     "react/require-default-props": "off",
     "react/no-array-index-key": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "no-console": "off"
   }
 }
