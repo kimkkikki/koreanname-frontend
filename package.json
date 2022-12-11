@@ -17,7 +17,7 @@
     "compression": "^1.7.4",
     "dotenv": "^8.0.0",
     "dotenv-load": "^2.0.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "less": "^2.7.3",
     "mobx": "4.x",
     "mobx-react": "^6.1.1",
