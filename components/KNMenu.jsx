@@ -92,13 +92,13 @@ class KNMenu extends Component {
           </Layout>
         </Layout>
 
-        {menu.onAds && isMobile ? (
+        {/* {menu.onAds && isMobile ? (
           ''
         ) : (
           <Affix style={{ position: 'absolute', top: 140, right: 0, width: 160, height: 600 }}>
             <AdSense.Google client="ca-pub-0128314650546610" slot="5737558320" style={{ display: 'inline-block', height: 600, width: 160 }} />
           </Affix>
-        )}
+        )} */}
 
         {menu.onAds && isMobile ? <AdSense.Google client="ca-pub-0128314650546610" slot="4231163289" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, height: 50, display: 'inline-block' }} format="fluid" /> : ''}
       </React.Fragment>
